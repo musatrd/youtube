@@ -28,15 +28,6 @@
                 border-radius: 10px;
                 cursor: pointer;
             }
-            .previewimg1:hover, .previewimg2:hover {
-                opacity: 1;
-            }
-            .divpreview1, .divpreview2 {
-                width: 293.31px;
-                display: inline-block;
-                vertical-align: top;
-                margin-left: 5px;
-            }
             .vidtitle,.vidtitle1 {
                 font-weight: bold;
             }
@@ -62,10 +53,6 @@
                 margin-top: 3px;
                 cursor: pointer;
             }
-            .divtitleinfo {
-                display: inline-block;
-                width: 240px;
-            }
             .divprofpic1 {
                 display: inline-block;
                 width: 36px;
@@ -73,50 +60,56 @@
                 margin-top: 3px;
                 margin-right: 4px;
             }
+            .gridpreview {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+            }
         </style>
     </head>
     <body>
         <input class="search" placeholder="Search" type="text">
-
-        <div class="divpreview1">
-            <div>
-                <img class="previewimg1" src="stockimg.png">
-            </div>
-            <div>
-                <P class="vidtitle">
-                    Build Interactive Web Apps Without Code
-                </P>
-            </div>
-            <div>
-                <p class="vidsubtitle">
-                    Save time & money! Bubble's no code, drag-and-drop editor makes web app development easy.
-                </p>
-            </div>
-            <div>
-                <p class="vidadinfo">
-                    <span class="bold"> Ad · </span> Bubble
-                </p>
-            </div>
-        </div>
-        
-        <div class="divpreview2">
-            <div>
-                <img class="previewimg2" src="stockimg1.png">
-            </div>
-            <div class="divtitle">
-                <div class="divprofpic1">
-                    <img class="profpic1" src="profpic1.png">
+        <div class="gridpreview">
+            <div class="divpreview1">
+                <div>
+                    <img class="previewimg1" src="stockimg.png">
                 </div>
-                <div class="divtitleinfo">
-                    <P class="vidtitle1">
-                        Talking Tech and AI with Google CEO Sundar Pichai!
+                <div>
+                    <P class="vidtitle">
+                        Build Interactive Web Apps Without Code
                     </P>
-                    <p class="vidsubtitle1">
-                        Marques Brownlee
+                </div>
+                <div>
+                    <p class="vidsubtitle">
+                        Save time & money! Bubble's no code, drag-and-drop editor makes web app development easy.
                     </p>
-                    <p class="vidadinfo1">
-                        3.4M views · 6 months ago
+                </div>
+                <div>
+                    <p class="vidadinfo">
+                        <span class="bold"> Ad · </span> Bubble
                     </p>
+                </div>
+            </div>
+
+            <div class="divpreview2">
+                <div>
+                    <img class="previewimg2" src="stockimg1.png">
+                </div>
+                <div class="divtitle">
+                    <div class="divprofpic1">
+                        <img class="profpic1" src="profpic1.png">
+                    </div>
+                    <div class="divtitleinfo">
+                        <P class="vidtitle1">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </P>
+                        <p class="vidsubtitle1">
+                            Marques Brownlee
+                        </p>
+                        <p class="vidadinfo1">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
