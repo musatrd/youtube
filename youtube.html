@@ -23,8 +23,7 @@
                 border-width: 1px;
             }
             .previewimg1, .previewimg2 {
-                width: 293.31px;
-                height: 153.52px;
+                width: 100%;
                 border-radius: 10px;
                 cursor: pointer;
             }
@@ -53,17 +52,16 @@
                 margin-top: 3px;
                 cursor: pointer;
             }
-            .divprofpic1 {
-                display: inline-block;
-                width: 36px;
-                vertical-align: top;
-                margin-top: 3px;
-                margin-right: 4px;
-            }
             .gridpreview {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-
+                column-gap: 17px;
+                row-gap: 40px;
+            }
+            .gridtitle {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                column-gap: 4px;
             }
         </style>
     </head>
@@ -95,7 +93,7 @@
                 <div>
                     <img class="previewimg2" src="stockimg1.png">
                 </div>
-                <div class="divtitle">
+                <div class="gridtitle">
                     <div class="divprofpic1">
                         <img class="profpic1" src="profpic1.png">
                     </div>
@@ -111,29 +109,96 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="divpreview2">
-                    <div>
-                        <img class="previewimg2" src="stockimg1.png">
-                    </div>
-                    <div class="divtitle">
-                        <div class="divprofpic1">
-                            <img class="profpic1" src="profpic1.png">
-                        </div>
-                        <div class="divtitleinfo">
-                            <P class="vidtitle1">
-                                Talking Tech and AI with Google CEO Sundar Pichai!
-                            </P>
-                            <p class="vidsubtitle1">
-                                Marques Brownlee
-                            </p>
-                            <p class="vidadinfo1">
-                                3.4M views · 6 months ago
-                            </p>
-                        </div>
-                    </div>
-                    
             </div>
+
+            <div class="divpreview2">
+                <div>
+                    <img class="previewimg2" src="stockimg2.png">
+                </div>
+                <div class="gridtitle">
+                    <div class="divprofpic1">
+                        <img class="profpic1" src="profpic2.png">
+                    </div>
+                    <div class="divtitleinfo">
+                        <P class="vidtitle1">
+                            Try Not To Laugh Challenge #9
+                        </P>
+                        <p class="vidsubtitle1">
+                            Markiplier
+                        </p>
+                        <p class="vidadinfo1">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divpreview2">
+                <div>
+                    <img class="previewimg2" src="stockimg3.png">
+                </div>
+                <div class="gridtitle">
+                    <div class="divprofpic1">
+                        <img class="profpic1" src="profpic3.png">
+                    </div>
+                    <div class="divtitleinfo">
+                        <P class="vidtitle1">
+                            Crazy Tik Toks Taken Moments Before DISASTER
+                        </P>
+                        <p class="vidsubtitle1">
+                            SSSniperWolf
+                        </p>
+                        <p class="vidadinfo1">
+                            12M views · 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divpreview2">
+                <div>
+                    <img class="previewimg2" src="stockimg4.png">
+                </div>
+                <div class="gridtitle">
+                    <div class="divprofpic1">
+                        <img class="profpic1" src="profpic4.png">
+                    </div>
+                    <div class="divtitleinfo">
+                        <P class="vidtitle1">
+                            The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                        </P>
+                        <p class="vidsubtitle1">
+                            Veritasium
+                        </p>
+                        <p class="vidadinfo1">
+                            18M views · 4 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divpreview2">
+                <div>
+                    <img class="previewimg2" src="stockimg5.png">
+                </div>
+                <div class="gridtitle">
+                    <div class="divprofpic1">
+                        <img class="profpic1" src="profpic5.png">
+                    </div>
+                    <div class="divtitleinfo">
+                        <P class="vidtitle1">
+                            Kadane's Algorithm to Maximum Sum Subarray Problem
+                        </P>
+                        <p class="vidsubtitle1">
+                            CS Dojo
+                        </p>
+                        <p class="vidadinfo1">
+                            519K views · 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </body>
 </html>
