@@ -1,0 +1,71 @@
+.flextopbar {
+    height: 49px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flexleftbar {
+    display: flex;
+    flex-direction: row;
+    margin-right: 49px;
+    align-items: center;
+    background-color: antiquewhite;
+    
+}
+.menuicon {
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.youtubeicon {
+    height: 20px; 
+}
+.flexcenterbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    margin-right: 30px;
+    background-color: aquamarine;
+}
+.searchinput {
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: rgb(196, 190, 190);
+    border-style: solid;
+    height: 30px;
+    max-width: 370px;
+    
+    flex: 1;
+
+}
+.searchinput::placeholder {
+
+}
+.searchicon {
+    height: 28px;
+}
+.voiceicon {
+    height: 28px;
+}
+.flexrightbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 240px;
+    justify-content: space-between;
+    
+    background-color: antiquewhite;
+}
+.uploadicon {
+    height: 28px;
+}
+.appsicon {
+    height: 28px;
+}
+.notifyicon {
+    height: 28px;
+}
+.channelimg {
+    height: 28px;
+}
