@@ -33,9 +33,33 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 17px;
     row-gap: 40px;
+    position: static;
 }
 .gridtitle {
     display: grid;
     grid-template-columns: 50px 1fr;
     column-gap: 4px;
+}
+.thumbnail2 {
+    position: relative;
+}
+.timeicon {
+    position: absolute;
+    background-color: black;
+    color: white;
+
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    font-size: 12px;
+
+    bottom: 10px;
+    right: 7px;
+
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+    border-radius: 1px;
+
 }

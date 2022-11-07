@@ -3,14 +3,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(224, 223, 223);
+    border-bottom-style: solid;
+    padding-bottom: 4px;
+    padding-top: 4px;
 }
 .flexleftbar {
     display: flex;
     flex-direction: row;
     margin-right: 49px;
     align-items: center;
-    background-color: antiquewhite;
-    
 }
 .menuicon {
     height: 24px;
@@ -25,37 +33,84 @@
     flex-direction: row;
     align-items: center;
     flex: 1;
+    max-width: 500px;
     margin-right: 30px;
-    background-color: aquamarine;
+    margin-left: 40px;
 }
 .searchinput {
-    border-radius: 4px;
-    border-width: 1px;
-    border-color: rgb(196, 190, 190);
-    border-style: solid;
-    height: 30px;
-    max-width: 370px;
-    
+    height: 36px;
+    width: 0;
+    padding-left: 14px;
     flex: 1;
-
+    font-size: 16px;
+    border-radius: 1px;
+    border-width: 1px;
+    border-color: rgb(224, 224, 224);
+    border-style: solid;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.04);
 }
-.searchinput::placeholder {
 
+.searchinput::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+.searchbutton { 
+    height: 40px;
+    width: 67px;
+    background-color: rgb(233, 233, 233);
+    border-width: 1px;
+    border-style: solid;
+    border-color:  rgb(224, 224, 224);
+    margin-left: -1px;
+    margin-right: 10px;
 }
 .searchicon {
-    height: 28px;
+    height: 24px;
+    margin-top: 4px;
+}
+.voicebutton {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(235, 235, 235);
+
 }
 .voiceicon {
-    height: 28px;
+    height: 24px;
+    margin-top: 4px;
 }
 .flexrightbar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 240px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 190px;
+    flex-shrink: 0;
     justify-content: space-between;
-    
-    background-color: antiquewhite;
+}
+.notifydiv {
+    position: relative;
+}
+.notifynum {
+    position: absolute;
+    background-color: rgb(182, 0, 0);
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    top: 0;
+    right: 0;
+
+    border: none;
+    border-radius: 12px;
+
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    font-weight: 500;
 }
 .uploadicon {
     height: 28px;
@@ -67,5 +122,6 @@
     height: 28px;
 }
 .channelimg {
-    height: 28px;
+    height: 32px;
+    border-radius: 14px;
 }

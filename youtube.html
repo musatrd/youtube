@@ -9,8 +9,9 @@
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
     </head>
-    <body>
+    <body class="body">
         <div class="flextopbar">
             <div class="flexleftbar">
                 <img class="menuicon" src="images/icons/hamburger-menu.svg">
@@ -28,10 +29,41 @@
             <div class="flexrightbar">
                 <img class="uploadicon" src="images/icons/upload.svg">
                 <img class="appsicon" src="images/icons/youtube-apps.svg">
-                <img class="notifyicon" src="images/icons/notifications.svg">
+                <div class="notifydiv">
+                    <img class="notifyicon" src="images/icons/notifications.svg">
+                    <div class="notifynum">2</div>
+                </div>
                 <img class="channelimg" src="images/thumbnails/my-channel.jpeg">
             </div>
         </div>
+
+        <div class="sidebar">
+            <div class="flexhome">
+                <img class="homeicon" src="images/icons/home.svg">
+                <p class="hometext">Home</p>
+            </div>
+            <div class="flexexplore">
+                <img class="exploreicon" src="images/icons/explore.svg">
+                <p class="exploretext">Explore</p>
+            </div>
+            <div class="flexsub">
+                <img class="subicon" src="images/icons/subscriptions.svg">
+                <p class="subtext">Subscriptions</p>
+            </div>
+            <div class="flexorigin">
+                <img class="originicon" src="images/icons/originals.svg">
+                <p class="origintext">Originals</p>
+            </div>
+            <div class="flexytmusic">
+                <img class="ytmusicicon" src="images/icons/youtube-music.svg">
+                <p class="ytmusictext">YouTube Music</p>
+            </div>
+            <div  class="flexlib">
+                <img class="libicon" src="images/icons/library.svg">
+                <p class="libtext">Library</p>
+            </div>
+        </div>
+
         <div class="gridpreview">
             <div class="divpreview1">
                 <div>
@@ -55,8 +87,9 @@
             </div>
 
             <div class="divpreview2">
-                <div>
+                <div class="thumbnail2">
                     <img class="previewimg2" src="images/thumbnails/stockimg1.png">
+                    <div class="timeicon">4:80</div>
                 </div>
                 <div class="gridtitle">
                     <div class="divprofpic1">
@@ -77,8 +110,9 @@
             </div>
 
             <div class="divpreview2">
-                <div>
+                <div class="thumbnail2">
                     <img class="previewimg2" src="images/thumbnails/stockimg2.png">
+                    <div class="timeicon">1:03</div>
                 </div>
                 <div class="gridtitle">
                     <div class="divprofpic1">
@@ -99,7 +133,8 @@
             </div>
 
             <div class="divpreview2">
-                <div>
+                <div class="thumbnail2">
+                    <div class="timeicon">7:09</div>
                     <img class="previewimg2" src="images/thumbnails/stockimg3.png">
                 </div>
                 <div class="gridtitle">
@@ -121,7 +156,8 @@
             </div>
 
             <div class="divpreview2">
-                <div>
+                <div class="thumbnail2">
+                    <div class="timeicon">2:40</div>
                     <img class="previewimg2" src="images/thumbnails/stockimg4.png">
                 </div>
                 <div class="gridtitle">
@@ -143,7 +179,8 @@
             </div>
 
             <div class="divpreview2">
-                <div>
+                <div class="thumbnail2">
+                    <div class="timeicon">1:10</div>
                     <img class="previewimg2" src="images/thumbnails/stockimg5.png">
                 </div>
                 <div class="gridtitle">
