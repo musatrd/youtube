@@ -7,5 +7,9 @@ p {
     height: 1000px;
     padding-top: 69px;
     padding-left: 82px;
+    padding-right: 14px;
     background-color: rgb(243, 243, 243);
+}
+div {
+    font-family: Roboto, Arial;
 }
