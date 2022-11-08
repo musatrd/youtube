@@ -35,6 +35,25 @@
     row-gap: 40px;
     position: static;
 }
+
+@media (max-width: 770px) {
+    .gridpreview {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 870px) and (min-width: 999px) {
+    .gridpreview {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .gridpreview {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 .gridtitle {
     display: grid;
     grid-template-columns: 50px 1fr;

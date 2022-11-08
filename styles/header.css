@@ -41,8 +41,7 @@
     max-width: 500px;
     margin-right: 30px;
     margin-left: 40px;
-
-    position: relative;
+    
 }
 
 .searchinput {
@@ -71,15 +70,10 @@
     border-color:  rgb(209, 209, 209);
     margin-left: -1px;
     margin-right: 10px;
-    opacity: 0.7;
 }
-.searchbutton:hover {
-    cursor: pointer;
-    opacity: 1;
-}
+
 .searchicon {
     height: 24px;
-    margin-top: 4px;
 }
 
 .voicebutton {
@@ -92,7 +86,6 @@
 }
 .voiceicon {
     height: 24px;
-    margin-top: 4px;
 }
 .flexrightbar {
     display: flex;
@@ -103,8 +96,9 @@
     width: 190px;
     flex-shrink: 0;
     justify-content: space-between;
-
     position: relative;
+
+  
 }
 .notifydiv {
     position: relative;
@@ -141,6 +135,44 @@
     height: 32px;
     border-radius: 14px;
 }
-.hoverinfo {
 
+.searchbutton .hovertext,
+.voicebutton .hovertext,
+.hoverstyle .hovertext,
+.notifydiv .hovertext {
+    position: absolute;
+    
+    background-color: grey;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: white;
+    bottom: -40px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.searchbutton:hover .hovertext,
+.voicebutton:hover .hovertext,
+.hoverstyle:hover .hovertext,
+.notifydiv:hover .hovertext {
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.14s;
+}
+
+.hoverinfo {
+    position: relative;
+}
+
+.searchbutton,
+.voicebutton,
+.hoverstyle,
+.notifydiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
