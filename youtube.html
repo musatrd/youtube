@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>youtube.com</title>
+    <head>
 
+        <title>YouTube Clone</title>
+
+        <!-- Link from Google Fonts, Roboto (font weight: 300, 400, 500, 700) -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" >
+
+        <!-- LInk from CSS styles folder-->
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/video.css">
         <link rel="stylesheet" href="styles/sidebar.css">
+
     </head>
+
     <body class="body">
-        <div class="flextopbar">
-            <div class="flexleftbar">
-                <img class="menuicon" src="images/icons/hamburger-menu.svg">
-                <img class="youtubeicon" src="images/icons/youtube-logo.svg">
+        <div class="header">
+            <div class="left-header">
+                <img class="menu-icon" src="images/icons/hamburger-menu.svg">
+                <img class="logo-icon" src="images/icons/youtube-logo.svg">
             </div>
-            <div class="flexcenterbar">
-                <input class="searchinput" placeholder="Search" type="text">
-                <div class="hoverinfo">
-                    <button class="searchbutton">
-                        <img class="searchicon" src="images/icons/search.svg">
-                        <div class="hovertext">Search</div>
+            <div class="center-header">
+                <input class="search" placeholder="Search" type="text">
+                <div class="text-search">
+                    <button class="search-button">
+                        <img class="search-icon" src="images/icons/search.svg">
+                        <div class="hover-text">Search</div>
                     </button>
                 </div>
-                <div class="hoverinfo">
-                    <button class="voicebutton">
-                        <img class="voiceicon" src="images/icons/voice-search-icon.svg">
-                        <div class="hovertext">Search with your voice</div>
+                <div class="voice-search">
+                    <button class="voice-button">
+                        <img class="voice-icon" src="images/icons/voice-search-icon.svg">
+                        <div class="hover-text">Search with your voice</div>
                     </button>
                 </div>
             </div>
-            <div class="flexrightbar">
-                <div class="hoverstyle">
-                    <img class="uploadicon" src="images/icons/upload.svg">
-                    <div class="hovertext">Create</div>
+            <div class="right-header">
+                <div class="upload">
+                    <img class="upload-icon" src="images/icons/upload.svg">
+                    <div class="hover-text">Create</div>
                 </div>
-                <div class="hoverstyle">
-                    <img class="appsicon" src="images/icons/youtube-apps.svg">
-                    <div class="hovertext">YouTube Apps</div>
+                <div class="youtube-apps">
+                    <img class="apps-icon" src="images/icons/youtube-apps.svg">
+                    <div class="hover-text">YouTube Apps</div>
                 </div>
-                <div class="notifydiv">
-                    <img class="notifyicon" src="images/icons/notifications.svg">
-                    <div class="notifynum">2</div>
-                    <div class="hovertext">Notifications</div>
+                <div class="notifications">
+                    <img class="notify-icon" src="images/icons/notifications.svg">
+                    <div class="notify-num">2</div>
+                    <div class="hover-text">Notifications</div>
                 </div>
-                <img class="channelimg" src="images/thumbnails/my-channel.jpeg">
+                <img class="channel-profile-pic" src="images/thumbnails/my-channel.jpeg">
             </div>
         </div>
 
