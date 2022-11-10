@@ -1,68 +1,27 @@
-.previewimg1, .previewimg2 {
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.vidtitle,.vidtitle1 {
-    font-weight: bold;
-}
-.vidtitle, .vidtitle1 {
-    margin-top: 7px;
-    margin-bottom: 7px;
-    cursor: pointer;
-}
-.vidsubtitle1, .vidadinfo1, .vidadinfo, .vidsubtitle {
-    font-size: 13px;
-    margin-bottom: 2px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    cursor: pointer;
-}
-.bold {
-    font-weight: bold;
-}
-.profpic1 {
-    border-radius: 40px;
-    width: 36px;
-    height: 36px;
-    margin-top: 3px;
-    cursor: pointer;
-}
-.gridpreview {
+.video-info-preview {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 17px;
     row-gap: 40px;
+
     position: static;
 }
-
 @media (max-width: 770px) {
-    .gridpreview {
+    .video-info-preview {
         grid-template-columns: 1fr 1fr;
     }
 }
-
 @media (max-width: 870px) and (min-width: 999px) {
-    .gridpreview {
+    .video-info-preview {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
 @media (min-width: 1000px) {
-    .gridpreview {
+    .video-info-preview {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-
-.gridtitle {
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    column-gap: 4px;
-}
-.thumbnail2 {
-    position: relative;
-}
-.timeicon {
+.video-length {
     position: absolute;
     background-color: black;
     color: white;
@@ -74,10 +33,45 @@
     bottom: 10px;
     right: 7px;
 
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 2px 4px;
     border: none;
     border-radius: 1px;
+}
+.thumbnail {
+    position: relative;
+}
+.thumbnail-preview {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.info-preview {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 4px;
+}
+.channel-image {
+    border-radius: 40px;
+    width: 36px;
+    height: 36px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.video-title {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.channel-name, .video-stats {
+    font-size: 13px;
+    margin-bottom: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.bold {
+    font-weight: bold;
 }
